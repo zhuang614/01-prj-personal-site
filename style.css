@@ -4,105 +4,119 @@ html, body {
 }
 
 body {
+  color: #333;
   font-family: Arial, sans-serif; /* Modern, easy-to-read font */
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Header styles */
 header {
-  background-color: #006064; /* Dark teal background */
+  background-color: #1F3A5F;
   color: white; /* White text */
   text-align: center;
   padding: 20px 0; /* Padding for spacing */
   font-size: 1.5em; /* Slightly larger font size */
 }
 
-header h1 {
-  font-size: 1em; /* Maintain font size for site name */
-  margin: 0; /* Remove default margin */
+h1 {
+  color: #dfe3e8;
+  font-size: 4em; /* Large main heading */
+  margin: 0; /* Remove extra space above and increase space below */
 }
 
-/* CTA section styles */
-.cta-section {
-  background: url('img/cta-bg.jpg') no-repeat center center; /* Background image */
+h2 {
+  font-size: 2em; /* Heading size */
+  margin: 0;
+}
+
+/* Hero section styles */
+.hero-section {
+  background: url('img/hero-bg.jpg') no-repeat center center; /* Background image */
   background-size: cover; /* Cover the entire section */
   background-blend-mode: overlay; /* Blend mode for light background effect */
-  background-color: rgba(224, 247, 250, 0.9); /* Light teal overlay color */
-  color: #006064; /* Dark teal text for readability */
+  background-color: #2A2F3A;
+  color: #D1D5DB;
   text-align: center;
-  padding: 100px 20px; /* Increased height of the banner */
+  padding: 50px 10px; /* Increased height of the banner */
 }
 
-.cta-section h2 {
-  font-size: 3.5em; /* Large main heading */
-  margin: 0 0 30px 0; /* Remove extra space above and increase space below */
-}
-
-.cta-section p {
-  font-size: 1.2em; /* Short description text */
-  margin: 0 auto 40px; /* Center text and add space below */
+.hero-section p {
+  color: #9daac8;
+  font-size: 1.4em; /* Short description text */
   font-weight: bold;
-  max-width: 1000px; /* Limit the width of the text */
-  line-height: 1.5; /* Line height for readability */
+  margin-bottom: 0;
 }
 
-.cta-section a {
-  background-color: #0288d1; /* Bright blue button */
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px; /* Rounded corners for the button */
-  font-size: 1.2em;
+.hero-section .profile-pic {
+  width: 150px; /* Small size */
+  border-radius: 50%; /* Rounded image */
+  border: 6px solid rgba(178, 190, 205, 0.4);
+  margin-bottom: 20px; /* Space below the image */
 }
 
-.cta-section a:hover {
-  background-color: #0277bd; /* Slightly darker blue on hover */
-}
-
-/* Info section styles */
-.info-section {
+/* Mission section styles */
+.mission-section {
   display: flex; /* Simple column layout */
+  flex-wrap: wrap;
   justify-content: center; /* Center the content */
   align-items: center; /* Center items vertically */
   padding: 50px 20px; /* Padding for spacing */
 }
 
-.info-section img {
-  width: 400px; /* Fixed width for the image */
+.mission-section h2 {
+  margin-top: 20px;
+  color: #2C4875;
+}
+
+.mission-section img {
+  width: 380px; /* Fixed width for the image */
   max-width: 50%; /* Ensure image is responsive */
   height: auto; /* Maintain aspect ratio */
   margin-right: 50px; /* Space between image and text */
   border-radius: 15px; /* Rounded corners for the image */
 }
 
-.info-section div {
-  max-width: 600px; /* Limit the width of the text container */
+.mission-section div {
+  max-width: 520px; /* Limit the width of the text container */
 }
 
-.info-section h2 {
-  color: #006064;
-  font-size: 2em; /* Heading size */
-  margin-bottom: 20px; /* Space below the heading */
-}
-
-.info-section p {
+.mission-section p {
   font-size: 1.2em; /* Text size */
   line-height: 1.5; /* Line height for readability */
 }
 
-/* Footer styles */
-main {
-  flex: 1; /* Take up remaining space */
+/* Skills section styles */
+.skills-section {
+  background-color: #1F3A5F;
+  color: #dce0e4;
+  text-align: center; /* Center the text */
+  padding: 60px 20px; /* Padding for spacing */
+}
+
+.skills-section p {
+  font-size: 1.2em; /* Text size */
+  margin-bottom: 30px; /* Space below the paragraph */
+}
+
+.skills-section ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.skills-section li {
+  font-size: 1.2em; /* List item text size */
+  margin-bottom: 10px; /* Space below each list item */
+  padding: 12px 20px;
+  background-color: #5A708D;
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Display list items inline */
+  margin: 5px; /* Space between list items */
 }
 
 footer {
-  background-color: #006064; /* Dark teal background */
-  color: white; /* White text */
   text-align: center;
-  padding: 20px 0; /* Padding for spacing */
+  padding: 30px 0; /* Padding for spacing */
   font-size: 1em; /* Standard font size */
   margin-top: auto; /* Push footer to the bottom */
 }
