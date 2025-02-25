@@ -1,1 +1,1 @@
-# project-1-personal-site
+# Project 1: Build Your Personal Website with AI!
