@@ -1,1 +1,131 @@
-/* Add you CSS here */
+/* General page styles */
+body {
+  font-family: 'Roboto', sans-serif;           /* Use a clean font */
+  background-image: url('img/background.jpg'); /* Background image */
+  background-size: cover;                      /* Cover the whole page */
+  background-repeat: no-repeat;                /* Do not repeat image */
+  background-position: center;                 /* Center the image */
+  min-height: 100vh;                           /* Fill the screen */
+  margin: 0;
+  padding: 0;
+  color: #ffffff;                              /* White text */
+}
+
+/* Navigation Bar styles */
+.navbar {
+  background-color: #2a1a5e;                   /* Dark background */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;                            /* Remove bullets */
+  display: flex;                               /* Horizontal menu */
+  justify-content: center;                     /* Center items */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;                             /* Space between links */
+}
+
+.navbar a {
+  color: #ffffff;                             /* White links */
+  text-decoration: none;                      /* No underline */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #00bbff;                  /* Highlight on hover */
+  border-radius: 5px;
+}
+
+.navbar i {
+  margin-right: 6px;                          /* Space for icons */
+}
+
+/* Hero (header) section */
+.hero {
+  background: #5a48ff;
+  color: rgb(255, 255, 255);
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Main content area */
+.content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Section styles */
+section {
+  background: rgba(112, 68, 255, 0.8);          /* Slightly see-through */
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 600px;                           /* Keep content centered */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2 {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Skills section with icons */
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.skills i {
+  color: #07ffe2;
+  margin-right: 10px;
+}
+
+/* Contact */
+.contact p {
+  font-weight: bold;
+}
+
+/* Make the image appear in a circle */
+.profile-pic {
+  width: 150px;           /* Set the size of the image */
+  height: 150px;          /* Set the size of the image */
+  object-fit: cover;      /* Make sure the image covers the frame */
+  border-radius: 50%;     /* This makes the image round */
+  border: 4px solid #fff; /* Optional: adds a white border around the circle */
+  display: block;         /* Makes it easier to center */
+  margin: 20px auto;      /* Centers the image horizontally */
+}
+
+/* White link for GitHub */
+.white-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
