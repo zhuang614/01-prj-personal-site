@@ -17,9 +17,9 @@ body {
 .navbar {
   background-color: #2a1a5e;                   /* Dark background */
   padding: 10px 0;
-  position: sticky;                            /* Stays at the top */
-  top: 0;
-  z-index: 1000;
+  position: sticky;                            /* Stays at the top when scrolling */
+  top: 0;                                      /* Top of the page */
+  z-index: 1000;                               /* On top of other elements */
 }
 
 .navbar ul {
