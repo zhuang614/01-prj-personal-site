@@ -6,8 +6,8 @@ body {
   background-repeat: no-repeat;                /* Do not repeat image */
   background-position: center;                 /* Center the image */
   min-height: 100vh;                           /* Fill the screen */
-  display: flex;                               /* Use flexbox for layout */
-  flex-direction: column;                      /* Stack children vertically */
+  display: flex;                               /* Stack content vertically */
+  flex-direction: column;
   margin: 0;
   padding: 0;
   color: #ffffff;                              /* White text */
@@ -17,7 +17,7 @@ body {
 .navbar {
   background-color: #2a1a5e;                   /* Dark background */
   padding: 10px 0;
-  position: sticky;
+  position: sticky;                            /* Stays at the top */
   top: 0;
   z-index: 1000;
 }
@@ -40,7 +40,6 @@ body {
   font-weight: bold;
   font-size: 1rem;
   padding: 8px 12px;
-  transition: background 0.3s;
 }
 
 .navbar a:hover {
@@ -54,8 +53,8 @@ body {
 
 /* Hero (header) section */
 .hero {
-  background: #5a48ff;
-  color: rgb(255, 255, 255);
+  background: #5a48ff;                        /* Purple background */
+  color: #fff;
   padding: 60px 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -79,11 +78,11 @@ body {
 
 /* Section styles */
 section {
-  background: rgba(112, 68, 255, 0.8);          /* Slightly see-through */
+  background: rgba(112, 68, 255, 0.8);        /* Slightly see-through */
   padding: 25px;
   margin: 30px auto;
   border-radius: 10px;
-  max-width: 600px;                           /* Keep content centered */
+  max-width: 600px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -106,27 +105,27 @@ h2 {
 }
 
 .skills i {
-  color: #ffffff;    /* White color for icons */
+  color: #ffffff;    /* White icons */
   margin-right: 8px; /* Space between icon and text */
 }
 
-/* Contact */
+/* Contact section */
 .contact p {
   font-weight: bold;
 }
 
-/* Make the image appear in a circle */
+/* Circular profile image */
 .profile-pic {
-  width: 150px;           /* Set the size of the image */
-  height: 150px;          /* Set the size of the image */
-  object-fit: cover;      /* Make sure the image covers the frame */
-  border-radius: 50%;     /* This makes the image round */
-  border: 4px solid #fff; /* Optional: adds a white border around the circle */
-  display: block;         /* Makes it easier to center */
-  margin: 20px auto;      /* Centers the image horizontally */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;     /* Makes the image round */
+  border: 4px solid #fff; /* White border */
+  display: block;
+  margin: 20px auto;      /* Center image */
 }
 
-/* White link for GitHub */
+/* White link for GitHub and LinkedIn */
 .white-link {
   color: #ffffff;
   text-decoration: underline;
@@ -134,14 +133,14 @@ h2 {
 
 /* Make the main content take up all available space */
 .bio, .content, section {
-  flex: 1;                     /* This pushes the footer down */
+  flex: 1;                     /* Pushes the footer down */
 }
 
 /* Footer styles */
 .footer {
-  text-align: center;          /* Center the text */
-  padding: 15px 0;             /* Space above and below */
-  color: #ffffff;              /* White text */
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffff;
   background: rgba(42, 26, 94, 0.9); /* Match navbar color */
-  font-size: 1em;              /* Normal font size */
+  font-size: 1em;
 }
