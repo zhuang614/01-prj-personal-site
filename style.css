@@ -6,6 +6,8 @@ body {
   background-repeat: no-repeat;                /* Do not repeat image */
   background-position: center;                 /* Center the image */
   min-height: 100vh;                           /* Fill the screen */
+  display: flex;                               /* Use flexbox for layout */
+  flex-direction: column;                      /* Stack children vertically */
   margin: 0;
   padding: 0;
   color: #ffffff;                              /* White text */
@@ -104,8 +106,8 @@ h2 {
 }
 
 .skills i {
-  color: #07ffe2;
-  margin-right: 10px;
+  color: #ffffff;    /* White color for icons */
+  margin-right: 8px; /* Space between icon and text */
 }
 
 /* Contact */
@@ -128,4 +130,18 @@ h2 {
 .white-link {
   color: #ffffff;
   text-decoration: underline;
+}
+
+/* Make the main content take up all available space */
+.bio, .content, section {
+  flex: 1;                     /* This pushes the footer down */
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;          /* Center the text */
+  padding: 15px 0;             /* Space above and below */
+  color: #ffffff;              /* White text */
+  background: rgba(42, 26, 94, 0.9); /* Match navbar color */
+  font-size: 1em;              /* Normal font size */
 }
