@@ -11,6 +11,9 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;                              /* White text */
+  text-align: center;                          /* Center all text */
+  position: relative;
+  overflow-x: hidden;                          /* Prevent horizontal (side) scrolling */
 }
 
 /* Navigation Bar styles */
@@ -18,10 +21,9 @@ body {
   background-color: #2a1a5e;                   /* Dark background */
   padding: 10px 0;
   position: sticky;                            /* Stays at the top when scrolling */
-  top: 0;                                      /* Top of the page */
-  z-index: 1000;                               /* On top of other elements */
+  top: 0;
+  z-index: 1000;
 }
-
 .navbar ul {
   list-style: none;                            /* Remove bullets */
   display: flex;                               /* Horizontal menu */
@@ -29,11 +31,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .navbar li {
   margin: 0 15px;                             /* Space between links */
 }
-
 .navbar a {
   color: #ffffff;                             /* White links */
   text-decoration: none;                      /* No underline */
@@ -41,30 +41,29 @@ body {
   font-size: 1rem;
   padding: 8px 12px;
 }
-
 .navbar a:hover {
   background-color: #00bbff;                  /* Highlight on hover */
   border-radius: 5px;
 }
-
 .navbar i {
   margin-right: 6px;                          /* Space for icons */
 }
 
 /* Hero (header) section */
 .hero {
-  background: #5a48ff;                        /* Purple background */
+  background-image: url('img/background.jpg'); /* Use background.jpg for hero */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #fff;
   padding: 60px 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 .hero h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
 }
-
 .hero p {
   font-size: 1.2em;
 }
@@ -78,12 +77,43 @@ body {
 
 /* Section styles */
 section {
-  background: rgba(112, 68, 255, 0.8);        /* Slightly see-through */
-  padding: 25px;
-  margin: 30px auto;
+  background: rgba(112, 68, 255, 0.8);        /* Slightly see-through purple */
+  padding: 25px 20px;                         /* Padding on all sides */
+  margin: 30px 0;                             /* Top and bottom margin */
   border-radius: 10px;
-  max-width: 600px;
+  max-width: none;                            /* Remove max-width so it stretches */
+  width: 100%;                                /* Fill the page */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Education boxes */
+.edu-box {
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-size: 1.05em;
+  text-align: center;
+  flex: 1 1 250px;              /* Allow boxes to grow and shrink, min width 250px */
+}
+.edu-box-iit {
+  background: #3e007c;
+}
+.edu-box-gca {
+  background: #3e007c;
+}
+
+/* Education boxes side by side */
+.edu-row {
+  display: flex;                /* Place boxes in a row */
+  justify-content: center;      /* Center the row */
+  gap: 20px;                    /* Space between boxes */
+  flex-wrap: wrap;              /* Stack on small screens */
+  margin-bottom: 16px;
 }
 
 /* Headings */
@@ -98,15 +128,69 @@ h2 {
   list-style: none;
   padding-left: 0;
 }
-
 .skills li {
   font-size: 1.1rem;
   margin: 10px 0;
 }
-
 .skills i {
-  color: #ffffff;    /* White icons */
-  margin-right: 8px; /* Space between icon and text */
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+/* Skills boxes row */
+.skills-row {
+  display: flex;               /* Place boxes in a row */
+  flex-wrap: wrap;             /* Wrap to next line if needed */
+  justify-content: center;     /* Center the row */
+  gap: 20px;                   /* Space between boxes */
+  margin-top: 20px;
+  max-width: 800px;            /* Limit total width for 3 boxes per row */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Each skill box */
+.skill-box {
+  flex: 1 1 220px;             /* Each box tries to be 220px wide */
+  max-width: 220px;            /* Maximum width for each box */
+  min-width: 180px;            /* Minimum width for each box */
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-size: 1.1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Description text inside each skill box */
+.skill-desc {
+  font-size: 0.95em;         /* Slightly smaller text */
+  color: #e0e0e0;            /* Lighter color for description */
+  margin-top: 8px;           /* Space above description */
+}
+
+/* Different background colors for each skill */
+.skill-html {
+  background: #3e007c;
+}
+.skill-css {
+  background: #3e007c;
+}
+.skill-python {
+  background: #3e007c;
+}
+.skill-linux {
+  background: #3e007c;
+}
+.skill-java {
+  background: #3e007c;
+}
+.skill-js {
+  background: #3e007c;
 }
 
 /* Contact section */
@@ -119,10 +203,10 @@ h2 {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;     /* Makes the image round */
-  border: 4px solid #fff; /* White border */
+  border-radius: 50%;
+  border: 4px solid #fff;
   display: block;
-  margin: 20px auto;      /* Center image */
+  margin: 20px auto;
 }
 
 /* White link for GitHub and LinkedIn */
@@ -131,16 +215,35 @@ h2 {
   text-decoration: underline;
 }
 
-/* Make the main content take up all available space */
-.bio, .content, section {
-  flex: 1;                     /* Pushes the footer down */
-}
-
 /* Footer styles */
 .footer {
   text-align: center;
   padding: 15px 0;
   color: #ffffff;
-  background: rgba(42, 26, 94, 0.9); /* Match navbar color */
+  background: rgba(42, 26, 94, 0.9);
   font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Return to Top button styles */
+.top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #7044ff;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+  z-index: 2000;
+}
+.top-button:hover {
+  background: #2a1a5e;
 }
