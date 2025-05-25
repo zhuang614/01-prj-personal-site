@@ -2,35 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home - My Portfolio</title>
-  <!-- Link to your CSS file -->
+  <title>Zifeng Huang - My Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Link to Font Awesome for icons -->
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-  <!-- Main content wrapper -->
-  <div class="content">
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-        <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
-        <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
-        <li><a href="contacts.html"><i class="fas fa-envelope"></i> Contacts</a></li>
-      </ul>
-    </nav>
-    <!-- Hero Section -->
-    <header class="hero">
-      <h1>Welcome to My Portfolio</h1>
-      <h2>Zifeng Huang</h2> <!-- Your name -->
-      <p>Future Web Developer | Student | Tech Enthusiast | Computer and Cybersecurity Engineering Major</p>
-    </header>
-  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <h2>Zifeng Huang</h2>
+    <p>Future Web Developer | Student | Tech Enthusiast | Computer and Cybersecurity Engineering Major</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bio">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p>
+      <i class="fas fa-info-circle"></i>
+      Hi! My name is Zifeng Huang. I'm a student at Illinois Institute of Technology and currently pursuing a Bachelor's degree in Computer and Cybersecurity Engineering.
+      I'm studying web development and building my skills one project at a time. I'm passionate about creating clean and simple websites that are easy to use and accessible to everyone.
+    </p>
+    <img src="img/me.png" class="profile-pic" alt="Profile Picture">
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="edu-row">
+      <!-- Illinois Institute of Technology box -->
+      <div class="edu-box edu-box-iit">
+        <i class="fas fa-university"></i>
+        <strong> Illinois Institute of Technology</strong><br>
+        <span><i class="fas fa-laptop-code"></i></span> Bachelor of Science in Computer and Cybersecurity Engineering<br>
+        <span><i class="fas fa-calendar-alt"></i></span> Expected Graduation: 2027-2028
+      </div>
+      <!-- Global Career Acceleration box -->
+      <div class="edu-box edu-box-gca">
+        <i class="fas fa-certificate"></i>
+        <strong> Global Career Acceleration</strong><br>
+        <span><i class="fas fa-code"></i></span> Web Development Course using AI<br>
+        <span><i class="fas fa-award"></i></span> Certificate Program
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2><i class="fas fa-code"></i> My Skills</h2>
+    <div class="skills-row">
+      <!-- HTML -->
+      <div class="skill-box skill-html">
+        <i class="fab fa-html5"></i> HTML
+        <div class="skill-desc"><i class="fas fa-globe"></i> Experience with HTML for building websites.</div>
+      </div>
+      <!-- CSS -->
+      <div class="skill-box skill-css">
+        <i class="fab fa-css3-alt"></i> CSS
+        <div class="skill-desc"><i class="fas fa-paint-brush"></i> Experience with CSS for styling websites.</div>
+      </div>
+      <!-- Python -->
+      <div class="skill-box skill-python">
+        <i class="fab fa-python"></i> Python
+        <div class="skill-desc"><i class="fas fa-terminal"></i> Experience with Python programming.</div>
+      </div>
+      <!-- Kali Linux -->
+      <div class="skill-box skill-linux">
+        <i class="fab fa-linux"></i> Kali Linux
+        <div class="skill-desc"><i class="fas fa-shield-alt"></i> Some experience with using Kali Linux for cybersecurity practices.</div>
+      </div>
+      <!-- Java -->
+      <div class="skill-box skill-java">
+        <i class="fab fa-java"></i> JAVA
+        <div class="skill-desc"><i class="fas fa-cogs"></i> Experience with Object-Oriented Programming in JAVA.</div>
+      </div>
+      <!-- JavaScript -->
+      <div class="skill-box skill-js">
+        <i class="fab fa-js"></i> JavaScript
+        <div class="skill-desc"><i class="fas fa-lightbulb"></i> Currently Learning JavaScript.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2><i class="fas fa-folder-open"></i> My Projects</h2>
+    <p><i class="fas fa-tools"></i> Work in progress! I'll be adding my class projects here as I complete them.</p>
+    <div class="coming-soon">
+      <i class="fas fa-clock fa-7x"></i>
+      <div class="coming-text">Coming Soon!</div>
+    </div>
+  </section>
+
+  <!-- Return to Top Button -->
+  <a href="#home" class="top-button">Return to Top</a>
+
   <!-- Footer -->
   <footer class="footer">
-    &copy; 2025 Zifeng Huang. All rights reserved.
+    <span>
+      <i class="fas fa-envelope"></i> Email: zhuang61@hawk.iit.edu &nbsp;|&nbsp;
+      <i class="fab fa-linkedin"></i> LinkedIn:
+      <a href="https://www.linkedin.com/in/zhuang61/" target="_blank" class="white-link">zhuang61</a> &nbsp;|&nbsp;
+      <i class="fab fa-github"></i> GitHub:
+      <a href="https://github.com/zhuang614" target="_blank" class="white-link">zhuang614</a>
+    </span>
+    <span style="margin-left: 20px;">
+      &copy; 2025 Zifeng Huang. All rights reserved.
+    </span>
   </footer>
+
 </body>
 </html>
